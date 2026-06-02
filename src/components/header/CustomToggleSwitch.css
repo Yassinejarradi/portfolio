@@ -1,0 +1,89 @@
+.custom-toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 5px;
+}
+
+.custom-toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ef5353;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4db5ff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4db5ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.label-left,
+.label-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: white;
+  transition: 0.4s;
+}
+
+.label-left {
+  left: 5px;
+}
+
+.label-right {
+  right: 5px;
+}
+
+.active.label-left {
+  opacity: 1;
+}
+
+.active.label-right {
+  opacity: 1;
+}
+
+/* Customize the appearance when switch is checked/unchecked */
+input:checked + .slider .label-left {
+  opacity: 0;
+}
+
+input:checked + .slider .label-right {
+  opacity: 1;
+}
+
+/* Additional styling for an active state (if needed) */
+.custom-toggle-switch.active {
+  /* Add your active state styles here */
+}

@@ -1,0 +1,274 @@
+{
+  "soloProjects": [
+    {
+      "id": 1,
+      "title": "Système de support IT (Tickets)",
+      "img": "../../assets/image1.gif",
+      "image": "../../assets/image1.gif",
+      "categories": ["web"],
+      "description": "Développé une plateforme de gestion des incidents avec notifications automatiques, gestion des priorités et tableaux de bord en temps réel — réduisant le temps de résolution de 40%.",
+      "technologies": "laravel,mysql,js,tailwindcss"
+    },
+    {
+      "id": 2,
+      "title": "Plateforme de vote en ligne régionale",
+      "img": "../../assets/image2.gif",
+      "image": "../../assets/image2.gif",
+      "categories": ["web"],
+      "description": "Développé un système de vote numérique sécurisé et transparent avec suivi des résultats en temps réel et journalisation complète des audits.",
+      "technologies": "laravel,mysql,js"
+    },
+    {
+      "id": 3,
+      "title": "Plateforme de mandats et représentation (Taklif)",
+      "img": "../../assets/image3.gif",
+      "image": "../../assets/image3.gif",
+      "categories": ["web"],
+      "description": "Conçu et déployé une application de gestion des mandats et demandes de représentation, avec gestion des rôles, génération de documents PDF et export Excel pour la traçabilité administrative.",
+      "technologies": "laravel,mysql,js,tailwindcss"
+    },
+    {
+      "id": 4,
+      "title": "Application de gestion des achats et des fournitures",
+      "img": "../../assets/image4.gif",
+      "image": "../../assets/image4.gif",
+      "categories": ["web"],
+      "description": "Optimisé et modernisé le système de gestion des stocks, commandes et validations avec une interface repensée et des workflows automatisés, améliorant la rapidité de traitement et la fiabilité des données.",
+      "technologies": "laravel,mysql,tailwindcss,js"
+    }
+  ],
+
+  "intro": {
+    "experience_card": "Expérience",
+    "experience_value": "2 ans",
+    "completed_card": "Complété",
+    "completed_value": "4+ Projets",
+    "support_card": "Support",
+    "support_value": "En ligne 24/7",
+    "name": "Yassine Jarradi",
+    "cvPath": "../../assets/yassine_jarradi_cv.pdf",
+    "image": "../../assets/Me.webp",
+    "title_card1": "Université",
+    "text_card1": "ENSAM Casablanca",
+    "title_card2": "Programme",
+    "text_card2": "Master Professionnel IA & IoT",
+    "description1": "- Développeur Full Stack & Technicien IT, spécialisé Laravel. Actuellement en 1ère année de Master Professionnel en Intelligence Artificielle et IoT à l'ENSAM Casablanca.",
+    "description2": "- Expérience avérée dans la digitalisation des processus métier, le développement d'applications web et l'optimisation des serveurs.",
+    "description3": "- Maîtrise de Laravel, MySQL, Tailwind CSS, JavaScript, React et Bootstrap.",
+    "descrip1": "Bonjour ! Je suis Yassine Jarradi, Développeur Full Stack & Technicien IT spécialisé Laravel, passionné par la création de solutions web efficaces et intuitives.",
+    "descrip2": "J'améliore l'efficacité des entreprises grâce à des applications bien conçues, performantes et centrées sur l'utilisateur — de la digitalisation des processus à l'optimisation des serveurs."
+  },
+
+  "skills": [
+    { "icon": "https://img.icons8.com/fluency/512/node-js.png", "title": "Node.js", "tag": "backend" },
+    { "icon": "https://img.icons8.com/color/512/express-js.png", "title": "Express.js", "tag": "backend" },
+    { "icon": "https://static-00.iconduck.com/assets.00/laravel-icon-1990x2048-xawylrh0.png", "title": "Laravel", "tag": "backend" },
+    { "icon": "https://cdn-icons-png.flaticon.com/512/2721/2721285.png", "title": "API RESTful", "tag": "backend" },
+    { "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png", "title": "GraphQL", "tag": "backend" },
+    { "icon": "https://img.icons8.com/fluency/240w/mysql-logo.png", "title": "MySQL", "tag": "sgbd" },
+    { "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg", "title": "PostgreSQL", "tag": "sgbd" },
+    { "icon": "https://img.icons8.com/color/512/mongodb.png", "title": "MongoDB", "tag": "sgbd" },
+    { "icon": "https://img.icons8.com/color/512/firebase.png", "title": "Firebase", "tag": "sgbd" },
+    { "icon": "https://cdn-icons-png.flaticon.com/512/174/174854.png", "title": "HTML5", "tag": "frontend" },
+    { "icon": "https://cdn-icons-png.flaticon.com/512/732/732190.png", "title": "CSS3", "tag": "frontend" },
+    { "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png", "title": "JavaScript", "tag": "frontend" },
+    { "icon": "https://cdn-icons-png.flaticon.com/512/760/760457.png", "title": "React.js", "tag": "frontend" },
+    { "icon": "https://img.icons8.com/color/512/vue-js.png", "title": "Vue.js", "tag": "frontend" },
+    { "icon": "https://img.icons8.com/color/512/git.png", "title": "Git", "tag": "platform" },
+    { "icon": "https://img.icons8.com/ios-glyphs/512/github.png", "title": "GitHub", "tag": "platform" },
+    { "icon": "https://img.icons8.com/color/512/gitlab.png", "title": "GitLab", "tag": "platform" },
+    { "icon": "https://jestjs.io/img/jest.png", "title": "Jest", "tag": "platform" },
+    { "icon": "https://avatars.githubusercontent.com/u/8770005?s=280&v=4", "title": "Mocha", "tag": "platform" },
+    { "icon": "https://img.icons8.com/color/512/chrome--v1.png", "title": "Chrome DevTools", "tag": "platform" }
+  ],
+
+  "experiences": [
+    {
+      "id": 0,
+      "image": "../../assets/cgem.png",
+      "role": "Développeur Fullstack & Support IT",
+      "company": "CGEM Casablanca",
+      "date": "Nov. 2024 - Présent",
+      "desc": "Développement et maintenance d'applications internes critiques, contribuant à la digitalisation des processus de gestion. Collaboration avec les utilisateurs et responsables métier pour optimiser les workflows et renforcer la sécurité des données. Amélioration continue des interfaces, de la scalabilité backend et des performances des bases de données.",
+      "skills": ["Laravel", "MySQL", "Tailwind CSS", "JavaScript", "Bootstrap", "AJAX"]
+    },
+    {
+      "id": 1,
+      "image": "../../assets/cgem.png",
+      "role": "Stagiaire en Développement Full Stack & Support Technique",
+      "company": "CGEM Casablanca",
+      "date": "Mars 2024 - Août 2024",
+      "desc": "Conception d'un système web pour la gestion des demandes et des stocks, automatisant les workflows de validation et de suivi. Mise en place de rôles utilisateurs sécurisés et de notifications automatiques, réduisant les délais de réponse de 40%. Développement d'un backend Laravel/MySQL avec interface responsive en Tailwind CSS et JavaScript.",
+      "skills": ["Laravel", "MySQL", "Tailwind CSS", "JavaScript"]
+    }
+  ],
+
+  "experience": {
+    "h5": "Mon expérience professionnelle en tant qu'ingénieur logiciel",
+    "h2": "Expérience"
+  },
+
+  "certification": {
+    "h5": "Explorez mes références professionnelles",
+    "h2": "Certification"
+  },
+
+  "portfolio": {
+    "h5": "Mes travaux récents",
+    "h2": "Portfolio"
+  },
+
+  "skillsSection": {
+    "h5": "Les compétences que je possède",
+    "h2": "Compétences"
+  },
+
+  "talk": "Contacter",
+  "download": "Télécharger CV",
+  "university": "Université",
+  "program": "Programme",
+  "programtext": "Master Professionnel IA & IoT",
+  "get_to_know": "Profil",
+  "hello": "Bonjour, je suis",
+  "say_hello": "Dire Bonjour",
+
+  "skills": {
+    "h5": "Les compétences que je possède",
+    "h2": "Compétences",
+    "s2": "Bases de données",
+    "s3": "Frontend",
+    "s4": "Plateformes & Outils",
+    "s5": "Backend"
+  },
+
+  "name_footer": "Yassine Jarradi",
+  "projets_footer": "Projets",
+  "certification_footer": "Certifications",
+  "introduction_footer": "À Mon Sujet",
+  "introduction_titre": "À Mon Sujet",
+  "sous-introduction_titre": "Mon introduction",
+  "scroll": "Défiler vers le bas",
+
+  "getInTouch": {
+    "h5": "Contactez-moi",
+    "message": "Je reçois vos messages et répondrai dès que possible si une adresse e-mail valide est fournie :)"
+  },
+
+  "cv_fr": "../../assets/yassine_jarradi_cv.pdf",
+  "cv": "../../assets/yassine_jarradi_cv.pdf",
+
+  "mes_competence": {
+    "titre": "Compétences",
+    "sous-titre": "Mon Niveau Technique",
+    "front_title": "Développeur Frontend",
+    "frontEndrow1": [
+      { "skills_name": "HTML5", "skills_level": "Intermédiaire" },
+      { "skills_name": "CSS3", "skills_level": "Intermédiaire" },
+      { "skills_name": "JavaScript", "skills_level": "Intermédiaire" }
+    ],
+    "frontEndrow2": [
+      { "skills_name": "React.js", "skills_level": "Intermédiaire" },
+      { "skills_name": "Vue.js", "skills_level": "Débutant" },
+      { "skills_name": "Tailwind CSS", "skills_level": "Intermédiaire" }
+    ],
+    "back_title": "Développeur Backend",
+    "backEndrow1": [
+      { "skills_name": "Laravel", "skills_level": "Avancé" },
+      { "skills_name": "Node.js", "skills_level": "Débutant" },
+      { "skills_name": "Express.js", "skills_level": "Débutant" }
+    ],
+    "backEndrow2": [
+      { "skills_name": "MySQL", "skills_level": "Intermédiaire" },
+      { "skills_name": "PostgreSQL", "skills_level": "Débutant" },
+      { "skills_name": "MongoDB", "skills_level": "Débutant" }
+    ],
+    "mobile_title": "Outils & Plateformes",
+    "mobilerow1": [
+      { "skills_name": "Git", "skills_level": "Intermédiaire" },
+      { "skills_name": "GitHub", "skills_level": "Intermédiaire" },
+      { "skills_name": "GitLab", "skills_level": "Intermédiaire" }
+    ],
+    "mobilerow2": [
+      { "skills_name": "Jest", "skills_level": "Débutant" },
+      { "skills_name": "Mocha", "skills_level": "Débutant" },
+      { "skills_name": "Chrome DevTools", "skills_level": "Intermédiaire" }
+    ]
+  },
+
+  "services": {
+    "title": "Services",
+    "subtitle": "Ce que j'offre",
+    "view_more": "Voir plus",
+    "web": {
+      "title": "Développement Web",
+      "description": "Fournir un travail de qualité aux clients et aux entreprises.",
+      "details": [
+        "Création d'applications web interactives et dynamiques.",
+        "Intégration de designs responsives pour une compatibilité multiplateforme.",
+        "Développement d'applications web performantes avec Laravel.",
+        "Mise en œuvre de composants d'interface utilisateur réutilisables.",
+        "Optimisation des performances frontend.",
+        "Développement de services RESTful sécurisés.",
+        "Gestion des bases de données relationnelles et non relationnelles.",
+        "Fonctionnalités backend sécurisées et évolutives.",
+        "Intégration et gestion des serveurs et APIs.",
+        "Mise en place d'authentifications et autorisations sécurisées.",
+        "Contrôle de version (Git) et CI/CD.",
+        "Implémentation continue de nouvelles fonctionnalités."
+      ]
+    },
+    "mobile": {
+      "title": "Développement Mobile",
+      "description": "Fournir un travail de qualité aux clients et aux entreprises.",
+      "details": [
+        "Développement d'applications mobiles multiplateformes.",
+        "Implémentation de fonctionnalités mobiles ciblées.",
+        "Optimisation des performances et de l'expérience utilisateur sur mobile.",
+        "Création d'interfaces utilisateur intuitives et réactives.",
+        "Intégration de fonctionnalités natives utiles."
+      ]
+    }
+  },
+
+  "qualification": "Qualification",
+  "qualification_sub": "Mon parcours personnel",
+
+  "education": [
+    {
+      "title": "Master Professionnel en Intelligence Artificielle et IoT (IA & IoT)",
+      "institution": "ENSAM – Casablanca",
+      "duration": "Sep. 2025 – Présent"
+    },
+    {
+      "title": "Licence en Ingénierie du Développement d'Applications (IDAI)",
+      "institution": "Faculté des Sciences et Techniques – Tanger",
+      "duration": "Sep. 2023 – Juil. 2024"
+    },
+    {
+      "title": "DEUST en GEGM",
+      "institution": "Faculté des Sciences et Techniques – Tanger",
+      "duration": "Sep. 2019 – Août 2022"
+    },
+    {
+      "title": "Baccalauréat (Sciences)",
+      "institution": "Groupe Scolaire Berra",
+      "duration": "Sep. 2018 – Août 2019"
+    }
+  ],
+
+  "experience2": [
+    {
+      "title": "Stagiaire en Développement Full Stack & Support Technique",
+      "institution": "CGEM Casablanca",
+      "duration": "Mars 2024 – Août 2024"
+    }
+  ],
+
+  "experience3": [
+    {
+      "title": "Développeur Fullstack & Support IT",
+      "institution": "CGEM Casablanca",
+      "duration": "Nov. 2024 – Présent"
+    }
+  ]
+}
