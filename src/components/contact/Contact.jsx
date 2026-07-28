@@ -1,20 +1,33 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+
+// ── Replace these three values with your EmailJS credentials ──────────────────
+const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";
+// ─────────────────────────────────────────────────────────────────────────────
+
 const Contact = () => {
   const form = useRef();
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // get thouse information from your account in www.emailjs.com
-    emailjs.sendForm(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
-      form.current,
-      "YOUR_PUBLIC_KEY"
-    );
-    e.target.reset();
+    setStatus("sending");
+
+    emailjs
+      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current, EMAILJS_PUBLIC_KEY)
+      .then(() => {
+        setStatus("success");
+        form.current.reset();
+        setTimeout(() => setStatus("idle"), 5000);
+      })
+      .catch(() => {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 5000);
+      });
   };
 
   return (
@@ -34,7 +47,7 @@ const Contact = () => {
                 <h3 className="contat_card-title">Email</h3>
                 <span className="contact_card-data">yassinejarradi@gmail.com</span>
                 <a
-                  href="mailto:examplemail@gmail.com.com"
+                  href="mailto:yassinejarradi@gmail.com"
                   className="contact_button">
                   Write me{" "}
                   <i className="bx bx-right-arrow-alt contact_button-icon"></i>
@@ -105,8 +118,19 @@ const Contact = () => {
                   rows="10"></textarea>
               </div>
 
-              <button className="button button--flex">
-                Send Message
+              {status === "success" && (
+                <p style={{ color: "green", fontSize: "var(--small-font-size)", marginBottom: "0.5rem" }}>
+                  ✓ Message sent! I'll get back to you soon.
+                </p>
+              )}
+              {status === "error" && (
+                <p style={{ color: "red", fontSize: "var(--small-font-size)", marginBottom: "0.5rem" }}>
+                  ✗ Something went wrong. Please try again.
+                </p>
+              )}
+
+              <button className="button button--flex" disabled={status === "sending"}>
+                {status === "sending" ? "Sending…" : "Send Message"}
                 <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"

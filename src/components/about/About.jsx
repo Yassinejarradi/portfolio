@@ -2,40 +2,14 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import "./about.css";
 import AboutImg from "../../assets/image1.jpg";
-import CV from "../../assets/yassine_jarradi_cv.pdf";
+import cvFR  from "../../assets/yassine_jarradi_cv_FR.pdf";
+import cvANG from "../../assets/yassine_jarradi_cv_ANG.pdf";
 import Info from "./Info";
-
-
-// traduction
 import { useTranslation } from "react-i18next";
-
-
-/*
-import { useTranslation } from "react-i18next";
-import { intro as introEn } from "../../translations/en/data";
-import { intro as introFr } from "../../translations/fr/data";
 
 const About = () => {
   const { t, i18n } = useTranslation("translation");
-  const currentLanguage = i18n.language;
-  const [cvPath, setCvPath] = useState("");
-
-  useEffect(() => {
-    const fetchCV = async () => {
-      const cvModule = currentLanguage === "fr" ? introFr.cvPath : introEn.cvPath;
-      const cvPath = `../../../public/${cvModule}`;
-      console.log("Current Language:", currentLanguage);
-      console.log("CV Path:", cvPath);
-      setCvPath(cvPath);
-    };
-
-    fetchCV();
-  }, [currentLanguage]);
-
-  return (*/
-//
-const About = () => {
-  const {t} = useTranslation("translation");
+  const CV = i18n.language === "fr" ? cvFR : cvANG;
 
   return (
     <section className="about section" id="about">

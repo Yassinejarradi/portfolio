@@ -2,39 +2,50 @@
   "soloProjects": [
     {
       "id": 1,
-      "title": "Système de support IT (Tickets)",
-      "img": "../../assets/image1.gif",
-      "image": "../../assets/image1.gif",
+      "title": "SupportDesk",
       "categories": ["web"],
-      "description": "Développé une plateforme de gestion des incidents avec notifications automatiques, gestion des priorités et tableaux de bord en temps réel — réduisant le temps de résolution de 40%.",
-      "technologies": "laravel,mysql,js,tailwindcss"
+      "description": "Plateforme SaaS B2B multi-tenant que j'ai conçue et que je commercialise — plusieurs entreprises sur une seule instance, bases isolées, WebSockets temps réel, branding white-label et 4 modes d'auto-assignation.",
+      "technologies": "laravel,mysql,js,tailwindcss",
+      "roles": [
+        { "label": "Admin",           "mediaKey": "tickets-admin", "mediaType": "mp4", "username": "admin",       "password": "••••••" },
+        { "label": "Agent/Technicien","mediaKey": "tickets-agent", "mediaType": "mp4", "username": "agent",       "password": "••••••" },
+        { "label": "Utilisateur",     "mediaKey": "tickets-user",  "mediaType": "mp4", "username": "utilisateur", "password": "••••••" }
+      ]
     },
     {
       "id": 2,
       "title": "Plateforme de vote en ligne régionale",
-      "img": "../../assets/image2.gif",
-      "image": "../../assets/image2.gif",
       "categories": ["web"],
       "description": "Développé un système de vote numérique sécurisé et transparent avec suivi des résultats en temps réel et journalisation complète des audits.",
-      "technologies": "laravel,mysql,js"
+      "technologies": "laravel,mysql,js",
+      "roles": [
+        { "label": "Admin",    "mediaKey": "vote-admin",    "mediaType": "gif", "username": "admin",    "password": "••••••" },
+        { "label": "Électeur", "mediaKey": "vote-electeur", "mediaType": "gif", "username": "electeur", "password": "••••••" }
+      ]
     },
     {
       "id": 3,
       "title": "Plateforme de mandats et représentation (Taklif)",
-      "img": "../../assets/image3.gif",
-      "image": "../../assets/image3.gif",
       "categories": ["web"],
       "description": "Conçu et déployé une application de gestion des mandats et demandes de représentation, avec gestion des rôles, génération de documents PDF et export Excel pour la traçabilité administrative.",
-      "technologies": "laravel,mysql,js,tailwindcss"
+      "technologies": "laravel,mysql,js,tailwindcss",
+      "roles": [
+        { "label": "Admin",       "mediaKey": "taklif-admin", "mediaType": "gif", "username": "admin",       "password": "••••••" },
+        { "label": "Utilisateur", "mediaKey": "taklif-user",  "mediaType": "gif", "username": "utilisateur", "password": "••••••" }
+      ]
     },
     {
       "id": 4,
       "title": "Application de gestion des achats et des fournitures",
-      "img": "../../assets/image4.gif",
-      "image": "../../assets/image4.gif",
       "categories": ["web"],
       "description": "Optimisé et modernisé le système de gestion des stocks, commandes et validations avec une interface repensée et des workflows automatisés, améliorant la rapidité de traitement et la fiabilité des données.",
-      "technologies": "laravel,mysql,tailwindcss,js"
+      "technologies": "laravel,mysql,tailwindcss,js",
+      "roles": [
+        { "label": "Admin",       "mediaKey": "gestion-admin",      "mediaType": "mp4", "username": "admin",       "password": "••••••" },
+        { "label": "Validateur",  "mediaKey": "gestion-validateur", "mediaType": "mp4", "username": "validateur",  "password": "••••••" },
+        { "label": "Acheteur",    "mediaKey": "gestion-acheteur",   "mediaType": "mp4", "username": "acheteur",    "password": "••••••" },
+        { "label": "Utilisateur", "mediaKey": "gestion-user",       "mediaType": "mp4", "username": "utilisateur", "password": "••••••" }
+      ]
     }
   ],
 
@@ -132,7 +143,7 @@
   "hello": "Bonjour, je suis",
   "say_hello": "Dire Bonjour",
 
-  "skills": {
+  "skillsLabels": {
     "h5": "Les compétences que je possède",
     "h2": "Compétences",
     "s2": "Bases de données",

@@ -2,39 +2,50 @@
   "soloProjects": [
     {
       "id": 1,
-      "title": "IT Support System (Ticketing)",
-      "img": "../../assets/image1.gif",
-      "image": "../../assets/image1.gif",
+      "title": "SupportDesk",
       "categories": ["web"],
-      "description": "Developed an incident management platform with automatic notifications, priority management, and real-time dashboards — reducing resolution time by 40%.",
-      "technologies": "laravel,mysql,js,tailwindcss"
+      "description": "A multi-tenant B2B SaaS platform I built and own — serving multiple companies from a single instance, each with an isolated database, real-time WebSockets, white-label branding, and 4 auto-assignment modes. Built to monetize.",
+      "technologies": "laravel,mysql,js,tailwindcss",
+      "roles": [
+        { "label": "Admin",  "mediaKey": "tickets-admin", "mediaType": "mp4", "username": "admin",  "password": "••••••" },
+        { "label": "Agent",  "mediaKey": "tickets-agent", "mediaType": "mp4", "username": "agent",  "password": "••••••" },
+        { "label": "User",   "mediaKey": "tickets-user",  "mediaType": "mp4", "username": "user",   "password": "••••••" }
+      ]
     },
     {
       "id": 2,
       "title": "Regional Online Voting Platform",
-      "img": "../../assets/image2.gif",
-      "image": "../../assets/image2.gif",
       "categories": ["web"],
       "description": "Built a secure and transparent digital voting system with real-time result tracking and full audit logging.",
-      "technologies": "laravel,mysql,js"
+      "technologies": "laravel,mysql,js",
+      "roles": [
+        { "label": "Admin", "mediaKey": "vote-admin",    "mediaType": "gif", "username": "admin",   "password": "••••••" },
+        { "label": "Voter", "mediaKey": "vote-electeur", "mediaType": "gif", "username": "voter",   "password": "••••••" }
+      ]
     },
     {
       "id": 3,
       "title": "Mandates & Representation Platform (Taklif)",
-      "img": "../../assets/image3.gif",
-      "image": "../../assets/image3.gif",
       "categories": ["web"],
       "description": "Designed and deployed an application for managing mandates and representation requests, with role management, PDF document generation, and Excel export for administrative traceability.",
-      "technologies": "laravel,mysql,js,tailwindcss"
+      "technologies": "laravel,mysql,js,tailwindcss",
+      "roles": [
+        { "label": "Admin", "mediaKey": "taklif-admin", "mediaType": "gif", "username": "admin", "password": "••••••" },
+        { "label": "User",  "mediaKey": "taklif-user",  "mediaType": "gif", "username": "user",  "password": "••••••" }
+      ]
     },
     {
       "id": 4,
       "title": "Purchase & Supply Management Application",
-      "img": "../../assets/image4.gif",
-      "image": "../../assets/image4.gif",
       "categories": ["web"],
       "description": "Optimized and modernized the stock, order, and validation management system with a redesigned interface and automated workflows, improving processing speed and data reliability.",
-      "technologies": "laravel,mysql,tailwindcss,js"
+      "technologies": "laravel,mysql,tailwindcss,js",
+      "roles": [
+        { "label": "Admin",     "mediaKey": "gestion-admin",      "mediaType": "mp4", "username": "admin",     "password": "••••••" },
+        { "label": "Validator", "mediaKey": "gestion-validateur", "mediaType": "mp4", "username": "validator", "password": "••••••" },
+        { "label": "Buyer",     "mediaKey": "gestion-acheteur",   "mediaType": "mp4", "username": "buyer",     "password": "••••••" },
+        { "label": "User",      "mediaKey": "gestion-user",       "mediaType": "mp4", "username": "user",      "password": "••••••" }
+      ]
     }
   ],
 
@@ -132,7 +143,7 @@
   "hello": "Hello I'm",
   "say_hello": "Say Hello",
 
-  "skills": {
+  "skillsLabels": {
     "h5": "The Skills I Have",
     "h2": "Skills",
     "s2": "Databases",

@@ -1,0 +1,435 @@
+/* ===== OVERLAY ========================================================== */
+
+.modal_overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: modal_fadeIn 0.2s ease;
+}
+
+.modal_overlay.modal_closing {
+  animation: modal_fadeOut 0.2s ease forwards;
+}
+
+/* ===== PANEL ============================================================ */
+
+.modal_panel {
+  background: var(--container-color);
+  border-radius: 1.25rem;
+  width: 100%;
+  max-width: 700px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;               /* children handle their own scroll */
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.25);
+  animation: modal_slideUp 0.25s ease;
+}
+
+.modal_panel.modal_closing {
+  animation: modal_slideDown 0.2s ease forwards;
+}
+
+/* ===== STICKY HEADER ==================================================== */
+
+.modal_header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.6rem 1.75rem 1.2rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+  flex-shrink: 0;
+}
+
+.modal_header-text {
+  min-width: 0;
+}
+
+.modal_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.modal_tagline {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.modal_close {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  background: transparent;
+  color: var(--title-color);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  margin-top: 0.1rem;
+}
+
+.modal_close:hover {
+  background: var(--title-color);
+  color: var(--container-color);
+}
+
+/* ===== SCROLLABLE BODY ================================================== */
+
+.modal_body {
+  overflow-y: auto;
+  padding: 1.6rem 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.85rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.3) transparent;
+}
+
+.modal_body::-webkit-scrollbar {
+  width: 5px;
+}
+.modal_body::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+}
+
+/* ===== SECTIONS ========================================================= */
+
+.modal_section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.modal_section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+}
+
+.modal_section-title i {
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+/* ── Overview ── */
+
+.modal_overview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.modal_overview p {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  line-height: 1.75;
+}
+
+/* ── Tech badges ── */
+
+.modal_tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.modal_tech-badge {
+  padding: 0.25rem 0.75rem;
+  background: rgba(128, 128, 128, 0.09);
+  border: 1px solid rgba(128, 128, 128, 0.18);
+  border-radius: 0.35rem;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+
+/* ── Roles grid ── */
+
+.modal_roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  gap: 0.7rem;
+}
+
+.modal_role-card {
+  background: rgba(128, 128, 128, 0.05);
+  border: 1px solid rgba(128, 128, 128, 0.13);
+  border-radius: 0.7rem;
+  padding: 0.85rem;
+}
+
+.modal_role-name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+}
+
+.modal_role-name i {
+  font-size: 1rem;
+}
+
+.modal_role-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.modal_role-list li {
+  display: flex;
+  gap: 0.35rem;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  line-height: 1.45;
+}
+
+.modal_role-list li::before {
+  content: "▸";
+  color: var(--title-color);
+  opacity: 0.55;
+  flex-shrink: 0;
+  font-size: 0.65rem;
+  margin-top: 0.2em;
+}
+
+/* ── Workflow ── */
+
+.modal_workflow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.modal_step {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding-bottom: 1.15rem;
+  position: relative;
+}
+
+/* Connector line — links adjacent circles */
+.modal_step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 13px;             /* center of 28 px circle (28/2 - 1) */
+  top: 28px;
+  bottom: 0;
+  width: 2px;
+  background: rgba(128, 128, 128, 0.18);
+}
+
+.modal_step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--title-color);
+  color: var(--container-color);
+  font-size: 0.7rem;
+  font-weight: var(--font-semi-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.modal_step-text {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  line-height: 1.55;
+  padding-top: 0.28rem;
+}
+
+/* ── Status flow ── */
+
+.modal_statuses {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.modal_status {
+  padding: 0.22rem 0.7rem;
+  background: rgba(128, 128, 128, 0.08);
+  border: 1px solid rgba(128, 128, 128, 0.18);
+  border-radius: 999px;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+
+.modal_status-arrow {
+  color: var(--title-color);
+  opacity: 0.5;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* ── Modules ── */
+
+.modal_modules-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.modal_module {
+  padding: 0.28rem 0.75rem;
+  background: rgba(128, 128, 128, 0.07);
+  border: 1px solid rgba(128, 128, 128, 0.15);
+  border-radius: 0.4rem;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.modal_module::before {
+  content: "◈";
+  color: var(--title-color);
+  opacity: 0.55;
+  font-size: 0.6rem;
+  flex-shrink: 0;
+}
+
+/* ── Dashboard metrics ── */
+
+.modal_metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  gap: 0.6rem;
+}
+
+.modal_metric {
+  background: rgba(128, 128, 128, 0.06);
+  border: 1px solid rgba(128, 128, 128, 0.13);
+  border-radius: 0.7rem;
+  padding: 0.75rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.modal_metric i {
+  font-size: 1.15rem;
+  color: var(--title-color);
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+.modal_metric span {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+/* ===== ANIMATIONS ======================================================= */
+
+@keyframes modal_fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes modal_fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+@keyframes modal_slideUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes modal_slideDown {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(28px); }
+}
+
+/* ===== RESPONSIVE ======================================================= */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .modal_header {
+    padding: 1.35rem 1.4rem 1rem;
+  }
+  .modal_body {
+    padding: 1.35rem 1.4rem 1.75rem;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile — slide up from bottom as a sheet */
+@media screen and (max-width: 576px) {
+  .modal_overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal_panel {
+    border-radius: 1.25rem 1.25rem 0 0;
+    max-height: 92vh;
+  }
+
+  .modal_panel.modal_closing {
+    animation: modal_slideDown 0.2s ease forwards;
+  }
+
+  .modal_header {
+    padding: 1.25rem 1.25rem 0.9rem;
+  }
+
+  .modal_body {
+    padding: 1.25rem 1.25rem 1.75rem;
+    gap: 1.4rem;
+  }
+
+  .modal_roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal_metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Tooltip on small screens: pin left to avoid clipping */
+  .work_creds-tooltip {
+    left: 0;
+    transform: none;
+  }
+
+  .work_creds-tooltip::after {
+    left: 12px;
+    transform: none;
+  }
+}
