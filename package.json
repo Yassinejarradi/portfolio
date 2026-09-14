@@ -2,6 +2,7 @@
   "name": "react_portfolio_website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Yassinejarradi.github.io/portfolio",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.14.5",
     "@emailjs/browser": "^3.12.1",
@@ -31,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.3.0"
   }
 }

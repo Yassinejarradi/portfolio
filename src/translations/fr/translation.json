@@ -13,28 +13,6 @@
       ]
     },
     {
-      "id": 2,
-      "title": "Plateforme de vote en ligne régionale",
-      "categories": ["web"],
-      "description": "Développé un système de vote numérique sécurisé et transparent avec suivi des résultats en temps réel et journalisation complète des audits.",
-      "technologies": "laravel,mysql,js",
-      "roles": [
-        { "label": "Admin",    "mediaKey": "vote-admin",    "mediaType": "gif", "username": "admin",    "password": "••••••" },
-        { "label": "Électeur", "mediaKey": "vote-electeur", "mediaType": "gif", "username": "electeur", "password": "••••••" }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Plateforme de mandats et représentation (Taklif)",
-      "categories": ["web"],
-      "description": "Conçu et déployé une application de gestion des mandats et demandes de représentation, avec gestion des rôles, génération de documents PDF et export Excel pour la traçabilité administrative.",
-      "technologies": "laravel,mysql,js,tailwindcss",
-      "roles": [
-        { "label": "Admin",       "mediaKey": "taklif-admin", "mediaType": "gif", "username": "admin",       "password": "••••••" },
-        { "label": "Utilisateur", "mediaKey": "taklif-user",  "mediaType": "gif", "username": "utilisateur", "password": "••••••" }
-      ]
-    },
-    {
       "id": 4,
       "title": "Application de gestion des achats et des fournitures",
       "categories": ["web"],
@@ -46,6 +24,22 @@
         { "label": "Acheteur",    "mediaKey": "gestion-acheteur",   "mediaType": "mp4", "username": "acheteur",    "password": "••••••" },
         { "label": "Utilisateur", "mediaKey": "gestion-user",       "mediaType": "mp4", "username": "utilisateur", "password": "••••••" }
       ]
+    },
+    {
+      "id": 2,
+      "title": "Plateforme de vote en ligne régionale",
+      "categories": ["web"],
+      "description": "Développé un système de vote numérique sécurisé et transparent avec suivi des résultats en temps réel et journalisation complète des audits.",
+      "technologies": "laravel,mysql,js",
+      "roles": []
+    },
+    {
+      "id": 3,
+      "title": "Plateforme de mandats et représentation (Taklif)",
+      "categories": ["web"],
+      "description": "Conçu et déployé une application de gestion des mandats et demandes de représentation, avec gestion des rôles, génération de documents PDF et export Excel pour la traçabilité administrative.",
+      "technologies": "laravel,mysql,js,tailwindcss",
+      "roles": []
     }
   ],
 

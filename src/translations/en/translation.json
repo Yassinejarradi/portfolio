@@ -13,28 +13,6 @@
       ]
     },
     {
-      "id": 2,
-      "title": "Regional Online Voting Platform",
-      "categories": ["web"],
-      "description": "Built a secure and transparent digital voting system with real-time result tracking and full audit logging.",
-      "technologies": "laravel,mysql,js",
-      "roles": [
-        { "label": "Admin", "mediaKey": "vote-admin",    "mediaType": "gif", "username": "admin",   "password": "••••••" },
-        { "label": "Voter", "mediaKey": "vote-electeur", "mediaType": "gif", "username": "voter",   "password": "••••••" }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Mandates & Representation Platform (Taklif)",
-      "categories": ["web"],
-      "description": "Designed and deployed an application for managing mandates and representation requests, with role management, PDF document generation, and Excel export for administrative traceability.",
-      "technologies": "laravel,mysql,js,tailwindcss",
-      "roles": [
-        { "label": "Admin", "mediaKey": "taklif-admin", "mediaType": "gif", "username": "admin", "password": "••••••" },
-        { "label": "User",  "mediaKey": "taklif-user",  "mediaType": "gif", "username": "user",  "password": "••••••" }
-      ]
-    },
-    {
       "id": 4,
       "title": "Purchase & Supply Management Application",
       "categories": ["web"],
@@ -46,6 +24,22 @@
         { "label": "Buyer",     "mediaKey": "gestion-acheteur",   "mediaType": "mp4", "username": "buyer",     "password": "••••••" },
         { "label": "User",      "mediaKey": "gestion-user",       "mediaType": "mp4", "username": "user",      "password": "••••••" }
       ]
+    },
+    {
+      "id": 2,
+      "title": "Regional Online Voting Platform",
+      "categories": ["web"],
+      "description": "Built a secure and transparent digital voting system with real-time result tracking and full audit logging.",
+      "technologies": "laravel,mysql,js",
+      "roles": []
+    },
+    {
+      "id": 3,
+      "title": "Mandates & Representation Platform (Taklif)",
+      "categories": ["web"],
+      "description": "Designed and deployed an application for managing mandates and representation requests, with role management, PDF document generation, and Excel export for administrative traceability.",
+      "technologies": "laravel,mysql,js,tailwindcss",
+      "roles": []
     }
   ],
 

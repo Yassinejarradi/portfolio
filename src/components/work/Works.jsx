@@ -205,8 +205,8 @@ const WorkCard = ({ pro }) => {
           </div>
         )}
 
-        {/* 4 ── Media viewer ── */}
-        <div className="work_media-wrap">
+        {/* 4 ── Media viewer (only when roles exist) ── */}
+        {roles.length > 0 && <div className="work_media-wrap">
           {isVideo ? (
             <video
               key={`${pro.id}-${selectedRole}`}
@@ -229,7 +229,7 @@ const WorkCard = ({ pro }) => {
               className="work_media work_media-enter"
             />
           )}
-        </div>
+        </div>}
 
         {/* 5 ── View details button ── */}
         {details && (
